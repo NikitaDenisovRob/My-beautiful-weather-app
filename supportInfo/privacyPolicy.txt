@@ -1,0 +1,36 @@
+Privacy policy
+
+
+1. What data our app collects?
+	1.1 Our app collect you location (latitude and longitude, 2 decimal places)
+
+2. How our app collects data?
+	2.1 If you have given permission to receive your location
+		The application receives your geolocation once at startup and once when you deploy the application (if the application was closed, 
+		geolocation is not tracked, and geolocation is not tracked in background mode).
+		We do not store your coordinates. Your coordinates are stored on your phone while the app is running. When you close the app, your coordinates 
+		are removed from your phone
+	2.2 If you have not given permission to get a location
+		The app does not track your location and don't store them
+
+3. How our app uses data
+	3.1 If you have given permission to receive your location (point 2)
+		We use an API to get the weather forecast for your geolocation, we need the latitude and longitude in order to make a get request.
+ 		Please note that your data is anonymized (we transmit only latitude and longitude (2 decimal places), which is not personally associated 
+		with you or your device and does not indicate your identity in any way.
+
+4. Information About Sharing Data With Third Parties
+	4.1 We use to get the weather forecast (item 3) we use the service "openweathermap" (https://openweathermap.org/api). We use the following queries
+		4.1.1 Getting the current weather
+			https://api.openweathermap.org/data/2.5/weather?lat={your latitude}&lon={your longitude}&appid={api key}
+		4.1.2 Getting a weather forecast for every 3 hours
+			https://api.openweathermap.org/data/2.5/forecast?lat={your latitude}&lon={your longitude}&appid={api key}
+		4.1.3 Getting a weekly weather forecast
+			https://api.openweathermap.org/data/2.5/onecall?lat={your latitude}&lon={your longitude}&exclude=minutely,hourly&appid={api key}
+
+5. How Users Can Revoke Consent
+	5.1 If you want to revoke consent, you can simply go to settings -> my weather -> switch (allow location tracking) toggle to the left (turn off) 
+	or simply delete the application
+
+6. How Users Can Delete Their Data
+	6.1 Since your coordinates are stored on your phone only while the application is active, to delete the data you just need to close the application
